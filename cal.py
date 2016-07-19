@@ -19,7 +19,7 @@ def cal(year, month=1, day=1):
         _month = month + 1
 
     aa = int(_year * 365.25)
-    bb = int(-month * 30.6)
+    bb = int(_month * 30.6)
     cc = _year // 400
     dd = _year // 100
     ee = aa + bb + cc + _day - dd - 429
